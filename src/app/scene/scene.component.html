@@ -1,0 +1,6 @@
+<button (click)="prev($event)">Anterior</button>
+<button (click)="next($event)">Siguiente</button>
+
+<div *ngFor="let moment of story">
+    <p [ngClass]="currentSentence == moment ? 'active' : 'notActive' "> {{moment}}></p>
+</div>

@@ -1,0 +1,23 @@
+button {
+    height: 50px;
+    width: 50%;
+    margin: 10px 0;
+}
+
+p {
+    outline: 1px solid black;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20%;
+    padding: 5px;
+}
+
+.active {
+    background-color: red;
+}
+
+.notActive {
+    background-color: grey;
+}
