@@ -13,7 +13,7 @@ export class SceneComponent implements OnInit {
   
   e:Event
   next(event:Event){
-    if(this.counter <= 0){
+    if(this.counter >= 0 && this.counter <= this.story.length){
       this.counter++;
     }
     this.currentSentence = this.story[this.counter];
@@ -21,7 +21,7 @@ export class SceneComponent implements OnInit {
   }
  
   prev(event:Event){
-    if(this.counter > 0){
+    if(this.counter > 0 ){
       this.counter--;
     }  
     this.currentSentence = this.story[this.counter];
