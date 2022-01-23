@@ -1,2 +1,12 @@
-<app-scene [story]="story">
-</app-scene>
+<ng-template #start>
+    <div class="container">
+        <div class=" vh-100 row mb-0 text-center d-flex justify-content-center align-content-center">
+            <p>Welcome, choose your way</p>
+            <button class="btn btn-primary" (click)="show=!show"> START</button>
+        </div>
+    </div>
+</ng-template>
+<div *ngIf="show; else start">
+    <app-scene [story]="story">
+    </app-scene>
+</div>
