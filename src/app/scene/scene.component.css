@@ -1,7 +1,8 @@
 button {
     height: 50px;
     width: 50%;
-    margin: 10px 0;
+    margin: 20px 0px;
+    border-radius: 8px;
 }
 
 p {
@@ -15,9 +16,9 @@ p {
 }
 
 .active {
-    background-color: red;
+    background-color: rgb(221, 73, 73);
 }
 
-.notActive {
-    background-color: grey;
+.inactive {
+    background-color: rgb(192, 189, 189);
 }
